@@ -10,7 +10,7 @@ import { useState } from 'react';
 export default function Home({ post }) {
     const [postData, setPostData] = useState(post?.name);
     const updateData = async () => {
-        const response = await fetch('http://localhost:3000/api/mail', {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_ENDPOINT}/api/mail`, {
             method: 'POST',
         });
         const data = await response.json();
