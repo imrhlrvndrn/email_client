@@ -7,7 +7,7 @@ export default async function handler(req, res) {
             await fs.readFileSync(`${process.cwd()}/json/inbox.json`, 'utf-8')
         );
         await fs.writeFileSync(
-            'json/inbox.json',
+            `${process.cwd()}/json/inbox.json`,
             JSON.stringify({ ...inboxData, name: 'rahul ravindran' }, null, 4)
         );
 
