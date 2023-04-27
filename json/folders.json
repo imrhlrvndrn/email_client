@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "_id": 1,
+            "type": "custom",
+            "name": "neogcamp",
+            "mails": [
+                {
+                    "mId": "neogcamp-1",
+                    "unread": true,
+                    "subject": "Training Program",
+                    "content": "About Invact Metaversity<br/>A 16-week rigorous alternate MBA program designed to get you a job in a core business function of a high growth company. The program will empower you with crucial job skills and help you build a proof-of-work portfolio that will make you job-ready."
+                },
+                {
+                    "mId": "neogcamp-2",
+                    "unread": false,
+                    "subject": "Empower your future at Invact",
+                    "content": "We are creating an immersive learning experience for students around the world. Learn with your peers in a social setting and belong to a community. Experience the classroom from your couch."
+                }
+            ],
+            "unread_count": 0
+        }
+    ]
+}
