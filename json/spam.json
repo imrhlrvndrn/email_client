@@ -5,31 +5,25 @@
     "flaggedMails": [],
     "mails": [
         {
-            "mId": "014",
+            "mId": "guid-6",
             "subject": "You've Won a Prize!",
             "content": "Congratulations, you have been selected as the winner of our latest giveaway! Click the link below to claim your prize. Hurry, this offer expires soon!",
             "unread": true
         },
         {
-            "mId": "015",
+            "mId": "guid-7",
             "subject": "Urgent Message from IRS",
             "content": "Attention, you have been flagged for suspicious activity on your tax returns. Click the link below to verify your information and avoid legal action. Failure to comply will result in severe consequences.",
             "unread": true
         },
         {
-            "mId": "016",
+            "mId": "guid-8",
             "subject": "Increase Your Income Now",
             "content": "Want to make more money? Our proven system can help you earn up to $10,000 a month with little to no effort. Click the link below to learn more and start earning today.",
             "unread": true
         },
         {
-            "mId": "017",
-            "subject": "Hot Singles in Your Area",
-            "content": "Looking for love? We've got you covered. Our exclusive dating site has thousands of hot singles in your area waiting to meet you. Click the link below to create your profile and start chatting today.",
-            "unread": true
-        },
-        {
-            "mId": "018",
+            "mId": "guid-9",
             "subject": "Nigerian Prince Needs Your Help",
             "content": "Dear friend, I am a Nigerian prince in need of urgent financial assistance. If you can help me transfer $10 million to a foreign account, I will reward you generously. Please respond to this email if you can help.",
             "unread": true

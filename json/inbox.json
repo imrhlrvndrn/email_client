@@ -5,7 +5,7 @@
     "flaggedMails": ["inbox-1"],
     "mails": [
         {
-            "mId": "guid-01",
+            "mId": "guid-1",
             "subject": "Request for Information",
             "content": "Hi, I hope this email finds you well. I'm reaching out to request more information about your product. Can you provide me with pricing and availability details? Thank you in advance for your help.",
             "unread": true
