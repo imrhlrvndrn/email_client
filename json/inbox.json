@@ -5,16 +5,34 @@
     "flaggedMails": ["inbox-1"],
     "mails": [
         {
-            "mId": "inbox-1",
-            "unread": true,
-            "subject": "Training Program",
-            "content": "About Invact Metaversity<br/>A 16-week rigorous alternate MBA program designed to get you a job in a core business function of a high growth company. The program will empower you with crucial job skills and help you build a proof-of-work portfolio that will make you job-ready."
+            "mId": "guid-01",
+            "subject": "Request for Information",
+            "content": "Hi, I hope this email finds you well. I'm reaching out to request more information about your product. Can you provide me with pricing and availability details? Thank you in advance for your help.",
+            "unread": true
         },
         {
-            "mId": "inbox-2",
-            "unread": false,
-            "subject": "Empower your future at Invact",
-            "content": "We are creating an immersive learning experience for students around the world. Learn with your peers in a social setting and belong to a community. Experience the classroom from your couch."
+            "mId": "guid-2",
+            "subject": "Change of Meeting Time",
+            "content": "Good morning, I apologize for any inconvenience but I need to reschedule our meeting from tomorrow at 2pm to Thursday at 10am. Please let me know if this works for you. Again, I apologize for any inconvenience.",
+            "unread": true
+        },
+        {
+            "mId": "guid-3",
+            "subject": "Feedback Request",
+            "content": "Dear customer, we value your opinion and would greatly appreciate it if you could take a few minutes to complete our survey. Your feedback will help us improve our products and services. Thank you for your time.",
+            "unread": true
+        },
+        {
+            "mId": "guid-4",
+            "subject": "Job Interview Confirmation",
+            "content": "Hello, I'm writing to confirm your upcoming job interview scheduled for next Monday at 9am. Please let us know if you have any questions or concerns. We look forward to meeting with you.",
+            "unread": false
+        },
+        {
+            "mId": "guid-5",
+            "subject": "Quarterly Report",
+            "content": "Hi team, attached you will find the quarterly report for our department. Please take the time to review it and let me know if you have any questions or concerns. Thank you for your hard work this quarter!",
+            "unread": false
         }
     ]
 }

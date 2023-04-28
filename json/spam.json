@@ -5,16 +5,34 @@
     "flaggedMails": [],
     "mails": [
         {
-            "mId": "spam-1",
-            "unread": true,
-            "subject": "Training Program",
-            "content": "About Invact Metaversity<br/>A 16-week rigorous alternate MBA program designed to get you a job in a core business function of a high growth company. The program will empower you with crucial job skills and help you build a proof-of-work portfolio that will make you job-ready."
+            "mId": "014",
+            "subject": "You've Won a Prize!",
+            "content": "Congratulations, you have been selected as the winner of our latest giveaway! Click the link below to claim your prize. Hurry, this offer expires soon!",
+            "unread": true
         },
         {
-            "mId": "spam-2",
-            "unread": false,
-            "subject": "Empower your future at Invact",
-            "content": "We are creating an immersive learning experience for students around the world. Learn with your peers in a social setting and belong to a community. Experience the classroom from your couch."
+            "mId": "015",
+            "subject": "Urgent Message from IRS",
+            "content": "Attention, you have been flagged for suspicious activity on your tax returns. Click the link below to verify your information and avoid legal action. Failure to comply will result in severe consequences.",
+            "unread": true
+        },
+        {
+            "mId": "016",
+            "subject": "Increase Your Income Now",
+            "content": "Want to make more money? Our proven system can help you earn up to $10,000 a month with little to no effort. Click the link below to learn more and start earning today.",
+            "unread": true
+        },
+        {
+            "mId": "017",
+            "subject": "Hot Singles in Your Area",
+            "content": "Looking for love? We've got you covered. Our exclusive dating site has thousands of hot singles in your area waiting to meet you. Click the link below to create your profile and start chatting today.",
+            "unread": true
+        },
+        {
+            "mId": "018",
+            "subject": "Nigerian Prince Needs Your Help",
+            "content": "Dear friend, I am a Nigerian prince in need of urgent financial assistance. If you can help me transfer $10 million to a foreign account, I will reward you generously. Please respond to this email if you can help.",
+            "unread": true
         }
     ]
 }
