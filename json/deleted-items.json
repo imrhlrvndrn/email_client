@@ -1,7 +1,8 @@
 {
-    "name": "deleteditems",
+    "name": "deleted-items",
     "type": "predefined",
     "unread_count": 0,
     "mails": [],
+    "flaggedMails":[],
     "folders": []
 }

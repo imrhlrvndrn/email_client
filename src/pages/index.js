@@ -1,23 +1,14 @@
 import Head from 'next/head';
-import Image from 'next/image';
-// import { Inter } from 'next/font/google';
-import styles from '@/styles/Home.module.css';
 import { readJSONData } from '@/utils/json.utils';
-import { useState } from 'react';
-
-// const inter = Inter({ subsets: ['latin'] });
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export default function Home({ post }) {
-    const [postData, setPostData] = useState(post?.name);
-    const updateData = async () => {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_ENDPOINT}/api/mail`, {
-            method: 'POST',
-        });
-        const data = await response.json();
-        console.log('data', data);
-        setPostData(data?.inbox?.name);
-    };
+    const router = useRouter();
 
+    useEffect(() => {
+        router.push('/mail/inbox');
+    }, []);
     return (
         <>
             <Head>
@@ -26,9 +17,7 @@ export default function Home({ post }) {
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <main>
-                <h1 onClick={() => updateData()}>{postData}</h1>
-            </main>
+            <main></main>
         </>
     );
 }

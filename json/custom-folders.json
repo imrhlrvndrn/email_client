@@ -1,9 +1,11 @@
 {
+    "name": "custom-folders",
     "folders": [
         {
-            "_id": 1,
+            "_id": "1",
             "type": "custom",
             "name": "neogcamp",
+            "flaggedMails": [],
             "mails": [
                 {
                     "mId": "neogcamp-1",

@@ -2,6 +2,9 @@
     "name": "inbox",
     "type": "predefined",
     "unread_count": 0,
+    "flaggedMails": [
+        "inbox-1"
+    ],
     "mails": [
         {
             "mId": "inbox-1",
