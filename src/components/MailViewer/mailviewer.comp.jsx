@@ -36,7 +36,7 @@ export const MailViewer = () => {
                 </div>
             ) : (
                 <>
-                    <MailViewerSubject>Subject: {subject}</MailViewerSubject>
+                    <MailViewerSubject>[Subject] {subject}</MailViewerSubject>
                     <MailViewerContent>{content}</MailViewerContent>
                 </>
             )}

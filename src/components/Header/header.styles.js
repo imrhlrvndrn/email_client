@@ -23,11 +23,8 @@ export const HeaderWrapper = styled.header`
         fill: ${(props) => props?.theme?.constants?.text?.white};
     }
 
-    @media screen and (max-width: 1024px) {
-        .options_icon {
-            cursor: pointer;
-            visibility: visible;
-        }
+    * {
+        color: ${(props) => props?.theme?.constants?.text?.white};
     }
 `;
 
@@ -64,16 +61,6 @@ export const HeaderQuickActions = styled.div`
     justify-content: space-between;
     align-items: center;
     color: ${(props) => props?.theme?.constants?.text?.white};
-
-    @media screen and (max-width: 1024px) {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        display: flex;
-        min-width: 200px;
-        flex-direction: column;
-        background-color: ${(props) => props?.theme?.background?.medium};
-    }
 `;
 
 export const HeaderQuickActionWrapper = styled.button`
@@ -93,9 +80,5 @@ export const HeaderQuickActionWrapper = styled.button`
     &:focus {
         cursor: pointer;
         background-color: ${(props) => props?.theme?.primary?.light};
-    }
-
-    @media screen and (max-width: 1024px) {
-        color: ${(props) => props?.theme?.text};
     }
 `;

@@ -1,4 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Outlook Prototype
+
+![Outlook Prototype Banner](./public/outlook_banner.png)
+
+## Introduction
+
+This project is a prototype of the popular email provider, Outlook. It is built using NextJS and uses the JSON files to retrieve & display the mail information.
+
+## Features
+
+1. When the app starts, the app loads the contents of each folder and displays the unread counts.
+1. Users can move around within the app to Inbox, Spam and Custom Folder.
+1. Users can select any mail and look into the contents
+1. Users can see a brief preview before clicking on it.
+1. Users can delete a message. In which case the message comes in deleted items.
+1. Users can flag a message.
+1. Users can filter inbox on whether a message is flagged or not.
+1. State and navigation should be saved between refreshes.
+
+## Built With
+
+1. NextJS
+1. NextJS API routes
+1. ReactJS Context API (State Management)
+1. Styled-Components
 
 ## Getting Started
 
@@ -13,26 +37,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -30,18 +30,6 @@ export const Header = () => {
                 <Filter width={22} height={22} />
             </HeaderSearchWrapper>
             <HeaderQuickActions>
-                <HeaderQuickActionButton title='Meet Now'>
-                    <Filter width={22} height={22} />
-                </HeaderQuickActionButton>
-                <HeaderQuickActionButton>
-                    <Filter width={22} height={22} />
-                </HeaderQuickActionButton>
-                <HeaderQuickActionButton>
-                    <Filter width={22} height={22} />
-                </HeaderQuickActionButton>
-                <HeaderQuickActionButton>
-                    <Filter width={22} height={22} />
-                </HeaderQuickActionButton>
                 <HeaderQuickActionButton onClick={toggleTheme}>
                     {theme === 'light' ? (
                         <DarkMode width={22} height={22} />
@@ -50,7 +38,7 @@ export const Header = () => {
                     )}
                 </HeaderQuickActionButton>
             </HeaderQuickActions>
-            <Options className='options_icon' width={22} height={22} />
+            {/* <Options className='options_icon' width={22} height={22} /> */}
         </HeaderWrapper>
     );
 };
