@@ -1,4 +1,4 @@
-import Filter from '@/assets/svg/filter.svg';
+import SelectMail from '@/assets/svg/unread.svg';
 import Trash from '@/assets/svg/trash.svg';
 import Unflagged from '@/assets/svg/flag.svg';
 import Flagged from '@/assets/svg/fill_flag.svg';
@@ -34,6 +34,23 @@ export const MailList = () => {
                 : JSON.parse(localStorage.getItem('activeFolder')),
         });
     }, [activeFolder?.name]);
+
+    if (!activeFolder?.mails?.length)
+        return (
+            <MailListWrapper
+                style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: 'calc(100vh - 150px)',
+                }}
+            >
+                <SelectMail width={62} height={62} />
+                <img src='@/assets/svg/select_mail.svg' alt='' />
+                <p>No mails to show.</p>
+            </MailListWrapper>
+        );
 
     return (
         <MailListWrapper>

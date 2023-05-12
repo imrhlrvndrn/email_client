@@ -1,7 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import Folder from '@/assets/svg/folder.svg';
 import RightChevron from '@/assets/svg/right_chevron.svg';
-import { AccordionContent, AccordionHeading, AccordionWrapper, FolderItem } from './sidebar.styles';
+import {
+    FolderGroupContent,
+    FolderGroupHeading,
+    FolderGroupWrapper,
+    FolderItem,
+} from './sidebar.styles';
 import { useMailContext } from '@/context/MailContext/mail.context';
 import { useRouter } from 'next/router';
 
@@ -28,13 +33,13 @@ export const Sidebar = () => {
 
     return (
         <div>
-            <Accordion title='Folders' folders={folders?.predefined} />
-            <Accordion title='Custom folders' folders={folders?.custom} />
+            <FolderGroup title='Folders' folders={folders?.predefined} />
+            <FolderGroup title='Custom folders' folders={folders?.custom} />
         </div>
     );
 };
 
-export const Accordion = ({ title, folders = [] }) => {
+export const FolderGroup = ({ title, folders = [] }) => {
     const [showContent, setShowContent] = useState(true);
     const [targetHeight, setTargetHeight] = useState(0);
     const targetRef = useRef(null);
@@ -46,37 +51,37 @@ export const Accordion = ({ title, folders = [] }) => {
 
     return (
         <>
-            <AccordionWrapper>
-                <AccordionHeading /*onClick={() => setShowContent(() => !showContent)}*/ disabled>
+            <FolderGroupWrapper>
+                <FolderGroupHeading onClick={() => setShowContent(() => !showContent)} disabled>
                     <Folder width={16} height={16} />
                     <h1>{title}</h1>
-                </AccordionHeading>
-                <AccordionContent
-                    targetHeight={targetHeight}
-                    ref={targetRef}
-                    className={showContent ? 'animated' : ''}
-                >
-                    {folders?.map((folder) => {
-                        return (
-                            <FolderItem
-                                href={`${folder?.route}`}
-                                onClick={() => router.push(`${folder?.route}`)}
-                                key={folder?._id}
-                                className={router.asPath.includes(folder?.route) ? 'active' : ''}
-                            >
-                                {/* <div className='link_wrapper'> */}
-                                <div className='folder_details'>
-                                    <h1 style={{ textTransform: 'capitalize' }}>
-                                        {folder?.name?.split('-')?.join(' ')}
-                                    </h1>
-                                </div>
-                                <span>{folder?.unreadCount}</span>
-                                {/* </div> */}
-                            </FolderItem>
-                        );
-                    })}
-                </AccordionContent>
-            </AccordionWrapper>
+                </FolderGroupHeading>
+                {showContent && (
+                    <FolderGroupContent
+                        targetHeight={targetHeight}
+                        ref={targetRef}
+                        className={showContent ? 'animated' : ''}
+                    >
+                        {folders?.map((folder) => {
+                            return (
+                                <FolderItem
+                                    href={`${folder?.route}`}
+                                    onClick={() => router.push(`${folder?.route}`)}
+                                    key={folder?._id}
+                                    className={
+                                        router.asPath.includes(folder?.route) ? 'active' : ''
+                                    }
+                                >
+                                    <div className='folder_details'>
+                                        <h1>{folder?.name?.split('-')?.join(' ')}</h1>
+                                    </div>
+                                    <span>{folder?.unreadCount}</span>
+                                </FolderItem>
+                            );
+                        })}
+                    </FolderGroupContent>
+                )}
+            </FolderGroupWrapper>
         </>
     );
 };

@@ -1,7 +1,7 @@
 {
     "name": "spam",
     "type": "predefined",
-    "unread_count": 0,
+    "unread_count": 4,
     "flaggedMails": [],
     "mails": [
         {

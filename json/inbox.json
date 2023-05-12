@@ -1,7 +1,7 @@
 {
     "name": "inbox",
     "type": "predefined",
-    "unread_count": 0,
+    "unread_count": 3,
     "flaggedMails": ["inbox-1"],
     "mails": [
         {

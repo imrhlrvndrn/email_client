@@ -10,9 +10,9 @@ export default async function handler(req, res) {
         const files = await fs.promises.readdir(`${process.cwd()}/json`);
 
         for (let i = 0; i < files.length; i++) {
-            if (files[i] !== 'custom-folders.json') {
-                const folderData = await readJSONData(`${process.cwd()}/json/${files[i]}`);
+            const folderData = await readJSONData(`${process.cwd()}/json/${files[i]}`);
 
+            if (files[i] !== 'custom-folders.json') {
                 folders.predefined.push({
                     _id: `${files[i]?.split('.json')[0]}${i}`,
                     name: `${files[i]?.split('.json')[0]}`,
@@ -22,8 +22,6 @@ export default async function handler(req, res) {
                     mailRoute: `/mail/${files[i]?.split('.json')[0]}`,
                 });
             } else {
-                const folderData = await readJSONData(`${process.cwd()}/json/${files[i]}`);
-
                 for (let i = 0; i < folderData?.folders?.length; i++) {
                     folders.custom.push({
                         _id: `${files[i]?.split('.json')[0]}${i}`,

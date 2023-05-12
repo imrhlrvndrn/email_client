@@ -26,14 +26,16 @@ This project is a prototype of the popular email provider, Outlook. It is built 
 
 ## Getting Started
 
-First, run the development server:
+The `setup` command will install all the dependencies & run the development server for you.
+
+After the first, time you can use `npm run dev` to start the development server.
 
 ```bash
-npm run dev
+npm run setup
 # or
-yarn dev
+yarn setup
 # or
-pnpm dev
+pnpm setup
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

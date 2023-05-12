@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-export const AccordionWrapper = styled.div`
+export const FolderGroupWrapper = styled.div`
     position: relative;
     cursor: pointer;
     width: 250px;
@@ -10,7 +10,7 @@ export const AccordionWrapper = styled.div`
     }
 `;
 
-export const AccordionHeading = styled.button`
+export const FolderGroupHeading = styled.button`
     width: 100% !important;
     display: flex;
     cursor: pointer;
@@ -30,22 +30,12 @@ export const AccordionHeading = styled.button`
     }
 `;
 
-export const AccordionContent = styled.div`
+export const FolderGroupContent = styled.div`
     padding-left: 1rem;
-    /* height: 0; */
-    /* opacity: 0; */
-    /* visibility: hidden; */
     transition: height 0.3s ease-in-out;
 
     svg {
         margin-right: 0.5rem;
-    }
-
-    &.animated {
-        opacity: 1;
-        visibility: visible;
-        margin-bottom: ${(props) => `${props?.targetHeight} + 1rem`};
-        transition: height 0.3s ease-in-out, opacity 0.3s 0.1s ease-in-out;
     }
 `;
 
@@ -66,20 +56,18 @@ export const FolderItem = styled.button`
         background-color: ${(props) => props?.theme?.primary?.light};
     }
 
-    .link_wrapper {
+    .folder_details {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        margin-right: 1rem;
 
-        .folder_details {
-            display: flex;
-            align-items: center;
-            margin-right: 1rem;
+        h1 {
+            text-transform: capitalize;
         }
+    }
 
-        span {
-            color: ${(props) => props?.theme?.primary?.dark};
-        }
+    span {
+        color: ${(props) => props?.theme?.primary?.dark};
     }
 
     &:hover {

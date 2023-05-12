@@ -81,12 +81,10 @@ export async function toggleMailFlag(mId, folderName) {
 }
 
 export async function togglePredefinedFolderMail(mId, folderName) {
-    console.log('toggle mail predefined...');
     const currentFolderData = await readJSONData(`${process.cwd()}/json/${folderName}.json`);
 
     const mailToBeFlagged = currentFolderData?.mails?.filter((mail) => mail?.mId === mId)[0];
     const isFlagged = currentFolderData?.flaggedMails?.includes(mailToBeFlagged?.mId);
-    console.log('before toggle => ', { currentFolderData, mailToBeFlagged, isFlagged });
 
     const updatedFolderData = {
         ...currentFolderData,

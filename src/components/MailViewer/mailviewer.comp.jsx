@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 
 export const MailViewer = () => {
     const [{ activeMail }, dispatchMail] = useMailContext();
-    const { subject, content } = activeMail;
 
     useEffect(() => {
         dispatchMail({
@@ -36,8 +35,8 @@ export const MailViewer = () => {
                 </div>
             ) : (
                 <>
-                    <MailViewerSubject>[Subject] {subject}</MailViewerSubject>
-                    <MailViewerContent>{content}</MailViewerContent>
+                    <MailViewerSubject>[Subject] {activeMail?.subject}</MailViewerSubject>
+                    <MailViewerContent>{activeMail?.content}</MailViewerContent>
                 </>
             )}
         </MailViewerWrapper>
